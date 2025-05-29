@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #051916;
+}
+
+a {
+    position: relative; /* necessário para posicionar ::after dentro do link */
+    color: #fff;
+    transition: width 0.3s ease;
+}
+a::after, .active::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    /* background-color: #fff; */
+    border-radius: 1px;
+}
+
+.section {
+    height: 100vh;
+    padding-top: 100px; /* compensar navbar fixa */
+    padding-left: 40px;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}

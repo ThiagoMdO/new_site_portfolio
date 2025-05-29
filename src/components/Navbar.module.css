@@ -1,0 +1,61 @@
+.nav {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.default {
+  background-color: transparent;
+}
+.default a::after {
+    background-color: #fff;
+}
+
+.scrolled {
+  background-color: #D9D9D9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.scrolled a, .scrolled span{
+  color: #051916;
+}
+.scrolled a::after {
+    background-color: #051916;
+}
+
+.navRight {
+  display: flex;
+  gap: 20px;
+}
+
+.navRight a {
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLeft {
+    cursor:default;
+}
+
+.navRight {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.navRight a::after {
+  transition: width 0.3s ease;
+}
+
+.navRight a:hover::after {
+  width: 50%;
+}

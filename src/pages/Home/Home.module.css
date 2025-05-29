@@ -1,0 +1,359 @@
+.introduction {
+    height: 80vh;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.introduction .nameAndJob {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction .nameAndJob h1 {
+    font-size: 5.6em;
+}
+
+.introduction .nameAndJob h4 {
+    font-size: 1.6em;
+    margin-left: 20%;
+}
+
+.introduction .nameAndJob .job {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.introduction .nameAndJob .job img {
+    width: 50px;
+}
+
+.infoRecentWorks {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+}
+
+.animatedIcon {
+  animation: floatUpDown 2s ease-in-out infinite;
+  width: 24px;
+  height: 24px;
+}
+.moreInfo {
+    animation: selection .2s ease-in-out forwards;
+}
+
+.lessInfo {
+  animation: deselection .2s ease forwards;
+}
+
+.section {
+    width: 100%;
+    padding: 100px 0;
+}
+
+/* Trabalhos recentes */
+
+.recentWorks {
+    background-color: #27A48D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+.recentWorks ul {
+    display: flex;
+    flex-wrap: wrap; /* permite quebra de linha */
+    justify-content: flex-start; /* centraliza horizontalmente */
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.recentWorks ul li{
+    width: 50%;
+    min-height: auto;
+    max-height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.recentWorks ul li iframe {
+    min-height: 300px;
+}
+.recentWorks ul li .work {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: justify;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+
+.recentWorks ul li .work div {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px;
+}
+
+.recentWorks ul li .work .infoWork {
+    max-width: 100%;
+    min-height: 200px;
+}
+.recentWorks ul li .work .infoWork p{
+    padding: 0 10px 0 20px;
+}
+
+.recentWorks ul li .work .technologies {
+    background-color: #fff;
+    border-radius: 5px;
+    width: auto;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.recentWorks ul li .work .technologies img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.customButton {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    background-color: #fff;
+    color: #27A48D;
+    border: #27A48D 3px solid;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.customButton img {
+    width: 40px;
+    height: 40px;
+}
+
+.customButton:hover {
+    background-color: #27A48D;
+    color: #fff;
+}
+
+/* Trabalhos recentes - Fim */
+
+
+/* Sobre mim */
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.aboutMe .myDescription {
+    display: flex;
+    
+}
+
+.aboutMe .myDescription img {
+    width: 40%;
+}
+
+.aboutMe .myDescription .myDescriptionInfo {
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    gap: 40px;
+    text-align: justify;
+}
+
+.aboutMe .experienceH2 {
+    width: 100%;
+    text-align: left;
+}
+.aboutMe .experienceH2 h2 {
+    font-size: 2.2em;
+}
+.aboutMe .experiences {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    flex-direction: column;
+}
+.aboutMe .experiences .experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.aboutMe .experiences .experience .experienceName, .aboutMe .experiences .experience .experienceInfo {
+    width: 50%;
+    padding: 20px;
+}
+
+.aboutMe .experiences .experience .experienceInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    text-align: justify;
+}
+
+.aboutMe .experiences .experience .experienceInfo div .period {
+    font-size: .7em;
+}
+
+.aboutMe .skills {
+    width: 90%;
+    padding: 0 4% 0;
+    flex-wrap: wrap;
+}
+.aboutMe .skills h2 {
+    position: relative;
+    font-size: 2em;
+}
+
+.aboutMe .skills h2::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 4%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.aboutMe .skills div{
+    margin-top: 15px;
+    display: flex;
+    width: 80%;
+    padding: 0 4% 0;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.aboutMe .skills img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+/* Sobre mim - Fim */
+
+
+/* Serviços */
+
+.typeServices {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services {
+    display: flex;
+    justify-content: center;
+}
+
+.services ul { 
+    display: flex;
+    width: 900px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services ul li{
+    margin-top: 80px;
+    width: 40%;
+}
+.services ul li p{
+    margin: 10px 0 0 10px;
+    text-align: justify;
+}
+/* Serviços - Fim */
+
+/* Contato */
+.contact {
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact form div {
+    display: flex;
+    justify-content: space-between;
+}
+.contact form div input, .contact form textarea {
+    padding: 10px;
+
+}
+.contact form div input {
+    width: 45%;
+}
+
+.contact form textarea {
+    width: 100%;
+}
+
+/* Contato - Fim */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes selection {
+    from {
+    transform: translateX(0);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes deselection {
+    from {
+        transform: translateX(10px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
