@@ -17,8 +17,12 @@ import IconSwagger from '../../assets/icons/material-icon_swagger.png';
 
 import IconPHP from '../../assets/icons/devicon_php.png';
 import IconJS from '../../assets/icons/vscode_icons_js.png';
+import IconReact from '../../assets/icons/icon_react.png';
 import IconJQuery from '../../assets/icons/devicon_jquery.png';
+import IconBootstrap from '../../assets/icons/logos_bootstrap.png';
+import IconFirebase from '../../assets/icons/logos_firebase.png';
 import IconMySQL from '../../assets/icons/logos_mysql.png';
+import IconPostGre from '../../assets/icons/devicon_postgresql.png';
 import IconHTML from '../../assets/icons/logos_html5.png';
 import IconCSS from '../../assets/icons/logos_css3.png';
 import IconPostman from '../../assets/icons/logos_postman.png';
@@ -29,6 +33,11 @@ import IconWebDev from '../../assets/icons/icon-park-solid_web-page.png';
 import IconBackend from '../../assets/icons/simple-icons_dailydotdev.png';
 import IconFrontend from '../../assets/icons/devicon-plain_devicon.png';
 import IconDatas from '../../assets/icons/carbon_development.png';
+
+import IconGitHub from '../../assets/icons/mdi_github.png';
+import IconInstagram from '../../assets/icons/icon_instagram.png';
+import IconLinkedIn from '../../assets/icons/mdi_linkedin.png';
+
 
 
 
@@ -481,21 +490,26 @@ const Home = () => {
         <div className={styles.skills}>
             <h2>Skills</h2>
             <div>
-                <img src={IconJava} alt="" />
-                <img src={IconPHP} alt="" />
-                <img src={IconJS} alt="" />
-                <img src={IconJQuery} alt="" />
-                <img src={IconSpring} alt="" />
-                <img src={IconAWS} alt="" />
-                <img src={IconMySQL} alt="" />
-                <img src={IconMongoDB} alt="" />
-                <img src={IconHTML} alt="" />
-                <img src={IconCSS} alt="" />
-                <img src={IconPostman} alt="" />
-                <img src={IconJUnit5} alt="" />
-                <img src={IconMockito} alt="" />
-                <img src={IconSwagger} alt="" />
-                <img src={IconDocker} alt="" /> 
+                <img src={IconJava}     alt="Java"          title='Java'/>
+                <img src={IconSpring}   alt="Springboot"    title='Springboot'/>
+                <img src={IconJUnit5}   alt="JUnit5"         title='JUnit5'/>
+                <img src={IconMockito}  alt="Mockito"       title='Mockito'/>
+                <img src={IconSwagger}  alt="Swagger"       title='Swagger'/>
+                <img src={IconJS}       alt="Javascript"    title='Javascript'/>
+                <img src={IconReact}    alt="React"         title='React'/>
+                <img src={IconWordpress} alt="Wordpress"    title='Wordpress'/>
+                <img src={IconMySQL}    alt="MySQL"         title='MySQL'/>
+                <img src={IconPostGre}  alt="Postgre"       title='Postgre'/>
+                <img src={IconMongoDB}  alt="MongoDB"       title='MongoDB'/>
+                <img src={IconPHP}      alt="PHP"           title='PHP'/>
+                <img src={IconHTML}     alt="HTML"          title='HTML'/>
+                <img src={IconCSS}      alt="CSS"           title='CSS'/>
+                <img src={IconJQuery}   alt="JQuery"        title='JQuery'/>
+                <img src={IconBootstrap} alt="Bootstrap"    title='Bootstrap'/>
+                <img src={IconAWS}      alt="AWS Cloud Practitioner" title='AWS Cloud Practitioner'/>
+                <img src={IconPostman}  alt="Postman"       title='Postman'/>
+                <img src={IconFirebase} alt="Firebase google" title='Firebase google'/>
+                <img src={IconDocker}   alt="Docker"        title='Docker'/> 
             </div>
         </div>
       </section>
@@ -546,6 +560,19 @@ const Home = () => {
             <textarea name="message" placeholder="Mensagem*" required></textarea>
             <button type="submit">ENVIAR MENSAGEM</button>
         </form>
+        <div className={styles.iconsSocial}>
+            <a href="https://github.com/ThiagoMdO" target='blank'>
+                <img src={IconGitHub} alt="" />
+            </a>
+            <a href="https://www.instagram.com/thiago_mdo/" target='blank'>
+                <img src={IconInstagram} alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/thiago-mdo/" target='blank'>
+                <img src={IconLinkedIn} alt="" />
+            </a>
+            
+            
+        </div>
       </section>
         
     </>

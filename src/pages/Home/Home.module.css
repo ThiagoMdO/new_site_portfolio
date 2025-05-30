@@ -44,6 +44,7 @@
   width: 24px;
   height: 24px;
 }
+
 .moreInfo {
     animation: selection .2s ease-in-out forwards;
 }
@@ -69,9 +70,8 @@
 }
 .recentWorks ul {
     display: flex;
-    flex-wrap: wrap; /* permite quebra de linha */
-    justify-content: flex-start; /* centraliza horizontalmente */
-    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
 }
 .recentWorks ul li{
@@ -85,8 +85,9 @@
 .recentWorks ul li iframe {
     min-height: 300px;
 }
+
 .recentWorks ul li .work {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -138,7 +139,7 @@
 }
 
 .customButton {
-    width: 50%;
+    width: 20%;
     text-align: center;
     font-size: 2em;
     padding: 10px;
@@ -191,9 +192,9 @@
 
 .aboutMe .experienceH2 {
     width: 100%;
-    text-align: left;
 }
 .aboutMe .experienceH2 h2 {
+    margin-left: 2%;
     font-size: 2.2em;
 }
 .aboutMe .experiences {
@@ -227,7 +228,7 @@
 }
 
 .aboutMe .skills {
-    width: 90%;
+    width: 80%;
     padding: 0 4% 0;
     flex-wrap: wrap;
 }
@@ -297,17 +298,18 @@
 
 /* Contato */
 .contact {
-    height: 50vh;
+    height: 60vh;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .contact form {
     display: flex;
-    width: 50%;
+    width: 30%;
     flex-direction: column;
     gap: 30px;
     margin-top: 30px;
@@ -317,16 +319,37 @@
     display: flex;
     justify-content: space-between;
 }
-.contact form div input, .contact form textarea {
+.contact form div input, .contact form textarea, .contact form button {
     padding: 10px;
-
+    border-radius: 5px;
+    border: none;
 }
 .contact form div input {
     width: 45%;
 }
 
 .contact form textarea {
-    width: 100%;
+    min-height: 200px;
+}
+.contact form button {
+    width: 40%;
+    margin: auto;
+    color: #fff;
+    background-color: #27A48D;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-weight: bold;
+}
+
+.contact form button:hover {
+    color: #27A48D;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 2px #27A48D;
+}
+
+.contact .iconsSocial {
+    display: flex;
+    gap: 30px;
 }
 
 /* Contato - Fim */
