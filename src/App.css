@@ -14,7 +14,7 @@ body {
 }
 
 a {
-    position: relative; /* necessário para posicionar ::after dentro do link */
+    position: relative;
     color: #fff;
     transition: width 0.3s ease;
 }
@@ -25,15 +25,14 @@ a::after, .active::after {
     left: 0;
     width: 0;
     height: 3px;
-    /* background-color: #fff; */
     border-radius: 1px;
 }
 
 .section {
     height: 100vh;
-    padding-top: 100px; /* compensar navbar fixa */
+    padding-top: 100px; 
     padding-left: 40px;
-    color: white;
+    color: #fff;
     scroll-behavior: smooth;
 }
 

@@ -1,0 +1,128 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+ul li{
+    width: 50%;
+    min-height: auto;
+    max-height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+ul li iframe {
+    min-height: 300px;
+}
+
+ul li .work {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: justify;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+
+ul li .work div {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px;
+}
+
+ul li .work .infoWork {
+    max-width: 100%;
+    min-height: 200px;
+}
+ul li .work .infoWork p{
+    padding: 0 10px 0 20px;
+}
+
+ul li .work .technologies {
+    background-color: #fff;
+    border-radius: 5px;
+    width: auto;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+ul li .work .technologies img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.customButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 30%;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px 45px 10px 10px;
+    background-color: #fff;
+    color: #27A48D;
+    border: #27A48D 3px solid;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.customButton img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.customButton:hover {
+    background-color: #27A48D;
+    color: #fff;
+}
+
+.animatedIcon {
+  animation: floatUpDown 2s ease-in-out infinite;
+  width: 24px;
+  height: 24px;
+}
+
+.moreInfo {
+    animation: selection .2s ease-in-out forwards;
+}
+
+.lessInfo {
+  animation: deselection .2s ease forwards;
+}
+
+
+@keyframes selection {
+    from {
+    transform: translateX(0);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes deselection {
+    from {
+        transform: translateX(10px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

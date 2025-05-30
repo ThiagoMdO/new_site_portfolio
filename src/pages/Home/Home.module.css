@@ -139,10 +139,14 @@
 }
 
 .customButton {
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 30%;
     text-align: center;
     font-size: 2em;
-    padding: 10px;
+    padding: 10px 45px 10px 10px;
     background-color: #fff;
     color: #27A48D;
     border: #27A48D 3px solid;
@@ -152,6 +156,7 @@
 .customButton img {
     width: 40px;
     height: 40px;
+    object-fit: contain;
 }
 
 .customButton:hover {
@@ -173,95 +178,7 @@
     color: #fff;
 }
 
-.aboutMe .myDescription {
-    display: flex;
-    
-}
 
-.aboutMe .myDescription img {
-    width: 40%;
-}
-
-.aboutMe .myDescription .myDescriptionInfo {
-    display: flex;
-    width: 55%;
-    flex-direction: column;
-    gap: 40px;
-    text-align: justify;
-}
-
-.aboutMe .experienceH2 {
-    width: 100%;
-}
-.aboutMe .experienceH2 h2 {
-    margin-left: 2%;
-    font-size: 2.2em;
-}
-.aboutMe .experiences {
-    display: flex;
-    gap: 100px;
-    width: 100%;
-    flex-direction: column;
-}
-.aboutMe .experiences .experience {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-}
-
-.aboutMe .experiences .experience .experienceName, .aboutMe .experiences .experience .experienceInfo {
-    width: 50%;
-    padding: 20px;
-}
-
-.aboutMe .experiences .experience .experienceInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 50%;
-    text-align: justify;
-}
-
-.aboutMe .experiences .experience .experienceInfo div .period {
-    font-size: .7em;
-}
-
-.aboutMe .skills {
-    width: 80%;
-    padding: 0 4% 0;
-    flex-wrap: wrap;
-}
-.aboutMe .skills h2 {
-    position: relative;
-    font-size: 2em;
-}
-
-.aboutMe .skills h2::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 4%;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 1px;
-}
-
-.aboutMe .skills div{
-    margin-top: 15px;
-    display: flex;
-    width: 80%;
-    padding: 0 4% 0;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.aboutMe .skills img{
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
 /* Sobre mim - Fim */
 
 
@@ -274,81 +191,17 @@
     align-items: center;
     flex-direction: column;
 }
-.services {
-    display: flex;
-    justify-content: center;
-}
 
-.services ul { 
-    display: flex;
-    width: 900px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.services ul li{
-    margin-top: 80px;
-    width: 40%;
-}
-.services ul li p{
-    margin: 10px 0 0 10px;
-    text-align: justify;
-}
 /* Serviços - Fim */
 
 /* Contato */
 .contact {
-    height: 60vh;
+    height: 70vh;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-}
-
-.contact form {
-    display: flex;
-    width: 30%;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.contact form div {
-    display: flex;
-    justify-content: space-between;
-}
-.contact form div input, .contact form textarea, .contact form button {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-}
-.contact form div input {
-    width: 45%;
-}
-
-.contact form textarea {
-    min-height: 200px;
-}
-.contact form button {
-    width: 40%;
-    margin: auto;
-    color: #fff;
-    background-color: #27A48D;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    font-weight: bold;
-}
-
-.contact form button:hover {
-    color: #27A48D;
-    background-color: #fff;
-    box-shadow: inset 0 0 0 2px #27A48D;
-}
-
-.contact .iconsSocial {
-    display: flex;
     gap: 30px;
 }
 

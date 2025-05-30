@@ -28,18 +28,17 @@ import IconCSS from '../../assets/icons/logos_css3.png';
 import IconPostman from '../../assets/icons/logos_postman.png';
 import IconAWS from '../../assets/icons/logos_aws.png';
 import IconDocker from '../../assets/icons/devicon_docker.png';
+import IconDocument from '../../assets/icons/mi_document.png';
 
-import IconWebDev from '../../assets/icons/icon-park-solid_web-page.png';
-import IconBackend from '../../assets/icons/simple-icons_dailydotdev.png';
-import IconFrontend from '../../assets/icons/devicon-plain_devicon.png';
-import IconDatas from '../../assets/icons/carbon_development.png';
 
 import IconGitHub from '../../assets/icons/mdi_github.png';
-import IconInstagram from '../../assets/icons/icon_instagram.png';
-import IconLinkedIn from '../../assets/icons/mdi_linkedin.png';
 
-
-
+// pages
+import Contact from '../Contact/Contact';
+import Services from '../Services/Services';
+import AboutMe from '../AboutMe/AboutMe';
+import Works from '../Works/Works';
+import Projects from '../Projects/Projects';
 
 const Home = () => {
 
@@ -72,10 +71,8 @@ const Home = () => {
         </section>
 
         <section id="trabalhos" className={`${styles.section} ${styles.recentWorks}`}>
-            <h2>TRABALHOS RECENTES</h2>
-            <div>
-                <a href='#'>Mais trabalhos...</a>
-            </div>
+            <Works />
+            {/* <h2>TRABALHOS RECENTES</h2>
             <ul>
                 <li>
                     <div className={styles.work}>
@@ -83,7 +80,8 @@ const Home = () => {
                             <h2>Festival Nacional de Curta Pensar Filmes</h2>
                             <a 
                                 href="https://festivalpensarfilmes.com.br/"
-                                target='blank'
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 onMouseEnter={(e) => {
                                     e.currentTarget.classList.add(styles.moreInfo);
                                     e.currentTarget.classList.remove(styles.lessInfo);
@@ -114,7 +112,7 @@ const Home = () => {
                             allowfullscreen>
                         </iframe>
                         <div className={styles.technologies}>
-                            <img src={IconWordpress} alt="" />
+                            <img src={IconWordpress} alt="Wordpress" title='Wordpress'/>
                         </div>
                     </div>
                 </li>
@@ -124,7 +122,8 @@ const Home = () => {
                             <h2>Festival Nacional de Curta Pensar Filmes</h2>
                             <a 
                                 href="https://festivalpensarfilmes.com.br/"
-                                target='blank'
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 onMouseEnter={(e) => {
                                     e.currentTarget.classList.add(styles.moreInfo);
                                     e.currentTarget.classList.remove(styles.lessInfo);
@@ -155,18 +154,16 @@ const Home = () => {
                             allowfullscreen>
                         </iframe>
                         <div className={styles.technologies}>
-                            <img src={IconWordpress} alt="" />
+                            <img src={IconWordpress} alt="Wordpress" title='Wordpress'/>
                         </div>
                     </div>
                     
                 </li>
-            </ul>
+            </ul> */}
       </section>
       <section id="projects" className={`${styles.recentWorks}`}>
-            <h2>PROJETOS RECENTES</h2>
-            <div>
-                <a href='#'>Mais projetos...</a>
-            </div>
+            <Projects />
+            {/* <h2>PROJETOS RECENTES</h2>
             <ul>
                 <li>
                     <div className={styles.work}>
@@ -174,7 +171,8 @@ const Home = () => {
                             <h2>Desafio Backend: Book_Store - Parte 1</h2>
                             <a
                                 href="https://github.com/ThiagoMdO/SpringBoot_Challenge_Book_Store"
-                                target='blank'
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 onMouseEnter={(e) => {
                                     e.currentTarget.classList.add(styles.moreInfo);
                                     e.currentTarget.classList.remove(styles.lessInfo);
@@ -207,16 +205,18 @@ const Home = () => {
                             allowfullscreen>
                         </iframe>
                         <div className={styles.technologies}>
-                            <img src={IconJava} alt="" />
-                            <img src={IconSpring} alt="" />
-                            <img src={IconMongoDB} alt="" />
-                            <img src={IconJUnit5} alt="" />
-                            <img src={IconMockito} alt="" />
-                            <img src={IconSwagger} alt="" />
+                            <img src={IconJava} alt="Java" title='Java'/>
+                            <img src={IconSpring} alt="Springboot" title='Springboot'/>
+                            <img src={IconMongoDB} alt="MongoDB" title='MongoDB'/>
+                            <img src={IconJUnit5} alt="JUnit5" title='JUnit5'/>
+                            <img src={IconMockito} alt="Mockito" title='Mockito'/>
+                            <img src={IconSwagger} alt="Swagger" title='Swagger'/>
                         </div>
                         <a href="https://github.com/ThiagoMdO/SpringBoot_Challenge_Book_Store"
                             className={styles.customButton}
-                            target="_blank">
+                            target="_blank"
+                            rel='noopener noreferrer'>
+                                <img src={IconGitHub} />
                             GITHUB
                         </a>
                     </div>
@@ -227,7 +227,8 @@ const Home = () => {
                             <h2>Desafio Backend: Book_Store - Parte 2</h2>
                             <a
                                 href="https://github.com/ThiagoMdO/SpringBoot_Challenge_Book_Store"
-                                target='blank'
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 onMouseEnter={(e) => {
                                     e.currentTarget.classList.add(styles.moreInfo);
                                     e.currentTarget.classList.remove(styles.lessInfo);
@@ -256,16 +257,18 @@ const Home = () => {
                             allowfullscreen>
                         </iframe>
                         <div className={styles.technologies}>
-                            <img src={IconJava} alt="" />
-                            <img src={IconSpring} alt="" />
-                            <img src={IconMongoDB} alt="" />
-                            <img src={IconJUnit5} alt="" />
-                            <img src={IconMockito} alt="" />
-                            <img src={IconSwagger} alt="" />    
+                            <img src={IconJava} alt="Java" title='Java'/>
+                            <img src={IconSpring} alt="Springboot" title='Springboot'/>
+                            <img src={IconMongoDB} alt="MongoDB" title='MongoDB'/>
+                            <img src={IconJUnit5} alt="JUnit5" title='JUnit5'/>
+                            <img src={IconMockito} alt="Mockito" title='Mockito'/>
+                            <img src={IconSwagger} alt="Swagger" title='Swagger'/>
                         </div>
                         <a href="https://github.com/ThiagoMdO/SpringBoot_Challenge_Book_Store"
                             className={styles.customButton}
-                            target="_blank">
+                            target="_blank"
+                            rel='noopener noreferrer'>
+                                <img src={IconGitHub} />
                             GITHUB
                         </a>
                     </div>
@@ -276,7 +279,8 @@ const Home = () => {
                             <h2>Projeto Pessoal: ERP Basico Loja Roupa</h2>
                             <a
                                 href="https://github.com/ThiagoMdO/ERP_Basico_Loja_roupa"
-                                target='blank'
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 onMouseEnter={(e) => {
                                     e.currentTarget.classList.add(styles.moreInfo);
                                     e.currentTarget.classList.remove(styles.lessInfo);
@@ -309,17 +313,19 @@ const Home = () => {
                             allowfullscreen>
                         </iframe>
                         <div className={styles.technologies}>
-                            <img src={IconPHP} alt="" />
-                            <img src={IconJS} alt="" />
-                            <img src={IconJQuery} alt="" />
-                            <img src={IconMySQL} alt="" />
-                            <img src={IconHTML} alt="" />
-                            <img src={IconCSS} alt="" />    
+                            <img src={IconPHP} alt="PHP" title='PHP'/>
+                            <img src={IconJS} alt="Javascript" title='Javascript'/>
+                            <img src={IconJQuery} alt="JQuery" title='JQuery'/>
+                            <img src={IconMySQL} alt="MySQL" title='MySQL'/>
+                            <img src={IconHTML} alt="HTML" title='HTML'/>
+                            <img src={IconCSS} alt="CSS" title='CSS'/>    
                         </div>
                         <a
                             href="https://github.com/ThiagoMdO/ERP_Basico_Loja_roupa"
                             className={styles.customButton}
-                            target="_blank">
+                            target="_blank"
+                            rel='noopener noreferrer'>
+                                <img src={IconGitHub} />
                             GITHUB
                         </a>
                     </div>
@@ -330,7 +336,8 @@ const Home = () => {
                             <h2>Desafio Backend: Challenge02 User - Parte 1</h2>
                             <a
                                 href="https://github.com/ThiagoMdO/SpringBoot_Challenge02_User_Management_Thiago_Mendes"
-                                target='blank'
+                                target='__blank'
+                                rel='noopener noreferrer'
                                 onMouseEnter={(e) => {
                                     e.currentTarget.classList.add(styles.moreInfo);
                                     e.currentTarget.classList.remove(styles.lessInfo);
@@ -370,7 +377,9 @@ const Home = () => {
                         </div>
                         <a href="https://github.com/ThiagoMdO/SpringBoot_Challenge02_User_Management_Thiago_Mendes"
                             className={styles.customButton}
-                            target="_blank">
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <img src={IconGitHub} />
                             GITHUB
                         </a>
                     </div>
@@ -381,7 +390,8 @@ const Home = () => {
                             <h2>Desafio Backend: Challenge02 User - Parte 2</h2>
                             <a
                                 href="https://github.com/ThiagoMdO/SpringBoot_Challenge02_User_Management_Thiago_Mendes"
-                                target='blank'
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 onMouseEnter={(e) => {
                                     e.currentTarget.classList.add(styles.moreInfo);
                                     e.currentTarget.classList.remove(styles.lessInfo);
@@ -416,168 +426,29 @@ const Home = () => {
                         </div>
                         <a href="https://github.com/ThiagoMdO/SpringBoot_Challenge02_User_Management_Thiago_Mendes"
                             className={styles.customButton}
-                            target="_blank">
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <img src={IconGitHub} />
                             GITHUB
                         </a>
                     </div>
                 </li>
-            </ul>
+            </ul> */}
       </section>
 
       <section id="about" className={`${styles.section} ${styles.aboutMe}`}>
-        <h2>INFORMAÇÕES PESSOAIS</h2>
-
-        <div className={styles.myDescription}>
-            <img src={PerfilProfilePicture} alt="" />
-            <div className={styles.myDescriptionInfo}>
-                <h2>Sobre mim</h2>
-                <p>
-                    Sou uma pessoa curiosa, comunicativa e apaixonada por resolver problemas e melhorar processos. 
-                    Tenho formação técnica em Eletrotécnica e experiência na área elétrica, mas me encontrei na programação, 
-                    especialmente no back-end com Java e Spring Boot. Busco constante aperfeiçoamento como desenvolvedor 
-                    Full Stack, unindo lógica, criatividade e boas práticas. Acredito que a tecnologia, aliada a valores 
-                    humanos, tem o poder de transformar a sociedade.
-                </p>
-                <a href="../../assets/cv/01 - curriculo Thiago Mendes - Dev.pdf"
-                    className={styles.customButton}
-                    target="_blank">
-                    CURRICULO
-                </a>
-            </div>
-            
-        </div>
-        <div className={styles.experienceH2}>
-            <h2>Experiência</h2>
-        </div>
-        <div className={styles.experiences}>
-            <div className={styles.experience}>
-                <div className={styles.experienceName}>
-                    <h2>Prefeitura Municipal de Pintadas</h2>
-                </div>
-                <div className={styles.experienceInfo}>
-                    <div>
-                        <h2>ANALISTA DE SISTEMA</h2>
-                        <p className={styles.period}>Março de 2025 - No momento</p>
-                    </div>
-                    <div>
-                        <p>
-                            Implantar e desenvolver sistemas para as secretarias do município, otimizando processos 
-                            administrativos. Levantamento de requisitos, desenvolvimento, manutenção e suporte de sistemas. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div className={styles.experience}>
-                <div className={styles.experienceName}>
-                    <h2>COMPASS UOL</h2>
-                </div>
-                <div className={styles.experienceInfo}>
-                    <div>
-                        <h2>Estágio</h2>
-                        <p className={styles.period}>Agosto de 2023 - Janeiro de 2024</p>
-                    </div>
-                    <div>
-                        <p>
-                            Treinamento intensivo em desenvolvimento com Java e Spring Boot e conhecimentos em AWS. 
-                            Participei de ativamente de metodologias ágeis, Scrum e Kanban, Daily, Sprints   
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div className={styles.skills}>
-            <h2>Skills</h2>
-            <div>
-                <img src={IconJava}     alt="Java"          title='Java'/>
-                <img src={IconSpring}   alt="Springboot"    title='Springboot'/>
-                <img src={IconJUnit5}   alt="JUnit5"         title='JUnit5'/>
-                <img src={IconMockito}  alt="Mockito"       title='Mockito'/>
-                <img src={IconSwagger}  alt="Swagger"       title='Swagger'/>
-                <img src={IconJS}       alt="Javascript"    title='Javascript'/>
-                <img src={IconReact}    alt="React"         title='React'/>
-                <img src={IconWordpress} alt="Wordpress"    title='Wordpress'/>
-                <img src={IconMySQL}    alt="MySQL"         title='MySQL'/>
-                <img src={IconPostGre}  alt="Postgre"       title='Postgre'/>
-                <img src={IconMongoDB}  alt="MongoDB"       title='MongoDB'/>
-                <img src={IconPHP}      alt="PHP"           title='PHP'/>
-                <img src={IconHTML}     alt="HTML"          title='HTML'/>
-                <img src={IconCSS}      alt="CSS"           title='CSS'/>
-                <img src={IconJQuery}   alt="JQuery"        title='JQuery'/>
-                <img src={IconBootstrap} alt="Bootstrap"    title='Bootstrap'/>
-                <img src={IconAWS}      alt="AWS Cloud Practitioner" title='AWS Cloud Practitioner'/>
-                <img src={IconPostman}  alt="Postman"       title='Postman'/>
-                <img src={IconFirebase} alt="Firebase google" title='Firebase google'/>
-                <img src={IconDocker}   alt="Docker"        title='Docker'/> 
-            </div>
-        </div>
+        <AboutMe />
       </section>
 
       <section id="services" className={`${styles.section} ${styles.typeServices}`}>
-        <h2>TIPOS DE SERVIÇOS</h2>
-        <div className={styles.services}>
-            <ul>
-                <li>
-                    <img src={IconWebDev} alt="" />
-                    <h3>WEB DEVELOPMENT</h3>
-                    <p>Criação de web sites institucionais, portifólio, divulgação de conteúdo digital</p>
-                </li>
-                <li>
-                    <img src={IconBackend} alt="" />
-                    <h3>BACKEND</h3>
-                    <p>
-                        Criação e ou consumo de APIs, utilizando arquitetura de projeto, com foco na organização, 
-                        segurança e cobertura de testes
-                    </p>
-                </li>
-                <li>
-                    <img src={IconFrontend} alt="" />
-                    <h3>FRONTEND</h3>
-                    <p>
-                        Criação de interfaces graficas faceis utilizando através de UX/UI
-                    </p>
-                </li>
-                <li>
-                    <img src={IconDatas} alt="" />
-                    <h3>ANALISTA DE SISTEMA</h3>
-                    <p>
-                        Foco total na busca por melhoria de software, em automatizar tarefas repetitivas e tratamento de dados mais simples.
-                    </p>
-                </li>
-            </ul>
-        </div>
+        <Services />
       </section>
-
+   
       <section id="contato" className={`${styles.section} ${styles.contact}`}>
-        <h2>FORMULARIO DE CONTATO</h2>
-        <form id="contactForm">
-            <div>
-                <input type="text" name="name" placeholder="Nome*" required />
-                <input type="email" name="email" placeholder="Email*" required />
-
-            </div>
-            <textarea name="message" placeholder="Mensagem*" required></textarea>
-            <button type="submit">ENVIAR MENSAGEM</button>
-        </form>
-        <div className={styles.iconsSocial}>
-            <a href="https://github.com/ThiagoMdO" target='blank'>
-                <img src={IconGitHub} alt="" />
-            </a>
-            <a href="https://www.instagram.com/thiago_mdo/" target='blank'>
-                <img src={IconInstagram} alt="" />
-            </a>
-            <a href="https://www.linkedin.com/in/thiago-mdo/" target='blank'>
-                <img src={IconLinkedIn} alt="" />
-            </a>
-            
-            
-        </div>
+        <Contact />
       </section>
         
-    </>
-
-        
+    </>        
     );
 };
 
