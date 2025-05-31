@@ -150,19 +150,22 @@
     .customButton img {
         display: none;
     }
+
     .experiences .experience .experienceName, .experiences .experience .experienceInfo {
         width: 80%;
+        padding: 20px 0;
     }
-    .experienceH2 {
-       margin-left: 30px;
+    
+    .experienceH2 h2 {
+        padding-left: 30px;
     }
-
     .experienceH2 h2::after {
+        margin-left: 30px;
         width: 20%;
     }
 
     .experiences {
-        padding: 10px;
+        padding: 10px 0;
     }
     .experiences .experience {
         flex-direction: column;
@@ -174,6 +177,13 @@
     }
 
     .skills div{
-        width: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills h2::after {
+        width: 20%;
     }
 }

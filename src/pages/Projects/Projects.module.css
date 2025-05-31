@@ -113,8 +113,6 @@ ul li .work .technologies img {
 
 @media (max-width: 600px) {
 
-    
-
     ul {
         flex-direction: column;
         gap: 40px;
