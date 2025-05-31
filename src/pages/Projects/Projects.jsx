@@ -231,10 +231,10 @@ const Projects = () => {
                         allowFullScreen>
                     </iframe>
                     <div className={styles.technologies}>
-                        <img src={IconJava} alt="" />
-                        <img src={IconSpring} alt="" />
-                        <img src={IconMySQL} alt="" />
-                        <img src={IconPostman} alt="" />
+                        <img src={IconJava} alt="Java" title='Java'/>
+                        <img src={IconSpring} alt="Springboot" title='Springboot'/>
+                        <img src={IconMySQL} alt="MySQL" title='MySQL'/>
+                        <img src={IconPostman} alt="Postman" title='Postman'/>
                     </div>
                     <a href="https://github.com/ThiagoMdO/SpringBoot_Challenge02_User_Management_Thiago_Mendes"
                         className={styles.customButton}
@@ -280,10 +280,10 @@ const Projects = () => {
                         allowFullScreen>
                     </iframe>
                     <div className={styles.technologies}>
-                        <img src={IconJava} alt="" />
-                        <img src={IconSpring} alt="" />
-                        <img src={IconMySQL} alt="" />
-                        <img src={IconPostman} alt="" />
+                        <img src={IconJava} alt="Java" title='Java'/>
+                        <img src={IconSpring} alt="Springboot" title='Springboot'/>
+                        <img src={IconMySQL} alt="MySQL" title='MySQL'/>
+                        <img src={IconPostman} alt="Postman" title='Postman'/>
                     </div>
                     <a href="https://github.com/ThiagoMdO/SpringBoot_Challenge02_User_Management_Thiago_Mendes"
                         className={styles.customButton}

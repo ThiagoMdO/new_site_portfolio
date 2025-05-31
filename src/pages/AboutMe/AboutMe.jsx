@@ -52,7 +52,7 @@ const AboutMe = () => {
                     target="_blank"
                     rel='noopener noreferrer'>
                         <img src={IconDocument} alt="" />
-                    CURRICULO
+                    CURRÍCULO
                 </a>
             </div>
             
