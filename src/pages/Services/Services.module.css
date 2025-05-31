@@ -24,7 +24,23 @@
     height: 80px;
     object-fit: contain;
 }
+
 .services ul li p{
     margin: 10px 0 0 10px;
     text-align: justify;
+}
+
+@media (max-width: 600px) { 
+
+    .services ul {
+        width: 100%;
+    }
+
+    .services ul li{
+        width: 90%;
+        margin-top: 30px;
+        height: auto;
+    }
+
+
 }

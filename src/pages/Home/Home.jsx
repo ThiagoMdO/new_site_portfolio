@@ -57,7 +57,7 @@ const Home = () => {
         </section>
 
         <section id="services" className={`${styles.section} ${styles.typeServices}`}>
-            {/* <Services /> */}
+            <Services />
         </section>
    
         <section id="contato" className={`${styles.section} ${styles.contact}`}>
