@@ -111,6 +111,40 @@ ul li .work .technologies img {
   animation: deselection .2s ease forwards;
 }
 
+@media (max-width: 600px) {
+
+    
+
+    ul {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .work {
+        margin-bottom: 50px;
+    }
+    .work iframe {
+        max-height: 20%;
+    }
+    
+    .work .infoWork{
+        margin-bottom: 100px;
+        height: auto;
+    }
+    .work .customButton {
+        margin: auto;
+        width: 50%;
+        padding: 20px;
+    }
+    .work .customButton img {
+        display: none;
+    }
+    ul .workLi{
+        width: 100%;
+        min-height: 1200px;
+    }
+
+}
 
 @keyframes selection {
     from {

@@ -26,7 +26,7 @@ const Projects = () => {
     <>
         <h2>PROJETOS RECENTES</h2>
         <ul>
-            <li>
+            <li className={styles.workLi}>
                 <div className={styles.work}>
                     <div>
                         <h2>Desafio Backend: Book_Store - Parte 1</h2>
@@ -82,7 +82,7 @@ const Projects = () => {
                     </a>
                 </div>
             </li>
-            <li>
+            <li className={styles.workLi}>
                 <div className={styles.work}>
                     <div>
                         <h2>Desafio Backend: Book_Store - Parte 2</h2>
@@ -104,7 +104,7 @@ const Projects = () => {
                     </div>
                     <div className={styles.infoWork}>
                         <p>
-                            Proximo video do desafio de código back end com Java e Springboot
+                            Proximo video do desafio de código back end com Java e Springboot, Book Store
                         </p>
                     </div>
                     <iframe 
@@ -134,7 +134,7 @@ const Projects = () => {
                     </a>
                 </div>
             </li>
-            <li>
+            <li className={styles.workLi}>
                 <div className={styles.work}>
                     <div>
                         <h2>Projeto Pessoal: ERP Basico Loja Roupa</h2>
@@ -191,7 +191,7 @@ const Projects = () => {
                     </a>
                 </div>
             </li>
-            <li>
+            <li className={styles.workLi}>
                 <div className={styles.work}>
                     <div>
                         <h2>Desafio Backend: Challenge02 User - Parte 1</h2>
@@ -245,7 +245,7 @@ const Projects = () => {
                     </a>
                 </div>
             </li>
-            <li>
+            <li className={styles.workLi}>
                 <div className={styles.work}>
                     <div>
                         <h2>Desafio Backend: Challenge02 User - Parte 2</h2>

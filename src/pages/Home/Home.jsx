@@ -45,11 +45,11 @@ const Home = () => {
         </section>
 
         <section id="trabalhos" className={`${styles.section} ${styles.recentWorks}`}>
-            {/* <Works /> */}
+            <Works />
         </section>
 
         <section id="projects" className={`${styles.recentWorks}`}>
-            {/* <Projects /> */}
+            <Projects />
         </section>
 
         <section id="about" className={`${styles.section} ${styles.aboutMe}`}>
@@ -61,7 +61,7 @@ const Home = () => {
         </section>
    
         <section id="contato" className={`${styles.section} ${styles.contact}`}>
-            <Contact />
+            {/* <Contact /> */}
         </section>
     </>        
     );

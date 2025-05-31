@@ -14,7 +14,7 @@ const Works = () => {
     <>
         <h2>TRABALHOS RECENTES</h2>
         <ul>
-            <li>
+            <li className={styles.workLi}>
                 <div className={styles.work}>
                     <div>
                         <h2>Festival Nacional de Curta Pensar Filmes</h2>
@@ -56,7 +56,7 @@ const Works = () => {
                     </div>
                 </div>
             </li>
-            <li>
+            <li  className={styles.workLi}>
                 <div className={styles.work}>
                     <div>
                         <h2>Festival Nacional de Curta Pensar Filmes</h2>

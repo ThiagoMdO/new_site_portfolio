@@ -82,6 +82,16 @@ ul li .work .technologies img {
   animation: deselection .2s ease forwards;
 }
 
+@media (max-width: 600px) { 
+    ul {
+        flex-direction: column;
+    }
+    ul .workLi{
+        width: 100%;
+    }
+
+}
+
 
 @keyframes selection {
     from {
