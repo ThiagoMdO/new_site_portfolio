@@ -61,7 +61,7 @@ const Home = () => {
         </section>
    
         <section id="contato" className={`${styles.section} ${styles.contact}`}>
-            {/* <Contact /> */}
+            <Contact />
         </section>
     </>        
     );

@@ -47,3 +47,27 @@ form button:hover {
     background-color: #fff;
     box-shadow: inset 0 0 0 2px #27A48D;
 }
+
+@media (max-width: 600px) { 
+
+    form {
+        width: 90%;
+    }
+    form div {
+        flex-direction: column;
+    }
+
+    form div input, form textarea {
+        width: 100%;
+        padding: 10px 2px;
+    }
+
+    form textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .recaptcha {
+        margin: auto;
+    }
+}
