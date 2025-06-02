@@ -76,19 +76,27 @@
   }
 
   .navRight {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease;
+    color: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: white;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    display: none;
-    padding: 50px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-top: 0;
-    width: 100%;
+  }
+
+  .navRight.active {
+    max-height: 400px; /* ou mais, conforme o número de links */
+    padding: 50px 0;
   }
 
   .navRight a {
