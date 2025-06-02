@@ -95,7 +95,7 @@
   }
 
   .navRight.active {
-    max-height: 400px; /* ou mais, conforme o número de links */
+    max-height: 400px;
     padding: 50px 0;
   }
 
