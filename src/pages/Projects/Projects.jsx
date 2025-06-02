@@ -1,5 +1,4 @@
 import styles from './Projects.module.css';
-
 // icons
 import IconParkOutline_right from '../../assets/icons/icon-park-outline_right.png';
 import IconJava from '../../assets/icons/devicon_java.png';
@@ -27,7 +26,7 @@ const Projects = () => {
         <h2>PROJETOS RECENTES</h2>
         <ul>
             <li className={styles.workLi}>
-                <div className={styles.work}>
+                <div className={`sectionToAnimate animate-up ${styles.work}`}>
                     <div>
                         <h2>Desafio Backend: Book_Store - Parte 1</h2>
                         <a
@@ -65,7 +64,7 @@ const Projects = () => {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen>
                     </iframe>
-                    <div className={styles.technologies}>
+                    <div className={`sectionToAnimate animate-up ${styles.technologies}`}>
                         <img src={IconJava} alt="Java" title='Java'/>
                         <img src={IconSpring} alt="Springboot" title='Springboot'/>
                         <img src={IconMongoDB} alt="MongoDB" title='MongoDB'/>
@@ -83,7 +82,7 @@ const Projects = () => {
                 </div>
             </li>
             <li className={styles.workLi}>
-                <div className={styles.work}>
+                <div className={`sectionToAnimate animate-up ${styles.work}`}>
                     <div>
                         <h2>Desafio Backend: Book_Store - Parte 2</h2>
                         <a
@@ -117,7 +116,7 @@ const Projects = () => {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen>
                     </iframe>
-                    <div className={styles.technologies}>
+                    <div className={`sectionToAnimate animate-up ${styles.technologies}`}>
                         <img src={IconJava} alt="Java" title='Java'/>
                         <img src={IconSpring} alt="Springboot" title='Springboot'/>
                         <img src={IconMongoDB} alt="MongoDB" title='MongoDB'/>
@@ -135,7 +134,7 @@ const Projects = () => {
                 </div>
             </li>
             <li className={styles.workLi}>
-                <div className={styles.work}>
+                <div className={`sectionToAnimate animate-up ${styles.work}`}>
                     <div>
                         <h2>Projeto Pessoal: ERP Basico Loja Roupa</h2>
                         <a
@@ -173,7 +172,7 @@ const Projects = () => {
                         mozallowFullScreen
                         allowFullScreen>
                     </iframe>
-                    <div className={styles.technologies}>
+                    <div className={`sectionToAnimate animate-up ${styles.technologies}`}>
                         <img src={IconPHP} alt="PHP" title='PHP'/>
                         <img src={IconJS} alt="Javascript" title='Javascript'/>
                         <img src={IconJQuery} alt="JQuery" title='JQuery'/>
@@ -192,7 +191,7 @@ const Projects = () => {
                 </div>
             </li>
             <li className={styles.workLi}>
-                <div className={styles.work}>
+                <div className={`sectionToAnimate animate-up ${styles.work}`}>
                     <div>
                         <h2>Desafio Backend: Challenge02 User - Parte 1</h2>
                         <a
@@ -230,7 +229,7 @@ const Projects = () => {
                         mozallowFullScreen
                         allowFullScreen>
                     </iframe>
-                    <div className={styles.technologies}>
+                    <div className={`sectionToAnimate animate-up ${styles.technologies}`}>
                         <img src={IconJava} alt="Java" title='Java'/>
                         <img src={IconSpring} alt="Springboot" title='Springboot'/>
                         <img src={IconMySQL} alt="MySQL" title='MySQL'/>
@@ -246,7 +245,7 @@ const Projects = () => {
                 </div>
             </li>
             <li className={styles.workLi}>
-                <div className={styles.work}>
+                <div className={`sectionToAnimate animate-up ${styles.work}`}>
                     <div>
                         <h2>Desafio Backend: Challenge02 User - Parte 2</h2>
                         <a
@@ -279,7 +278,7 @@ const Projects = () => {
                         mozallowFullScreen
                         allowFullScreen>
                     </iframe>
-                    <div className={styles.technologies}>
+                    <div className={`sectionToAnimate animate-up ${styles.technologies}`}>
                         <img src={IconJava} alt="Java" title='Java'/>
                         <img src={IconSpring} alt="Springboot" title='Springboot'/>
                         <img src={IconMySQL} alt="MySQL" title='MySQL'/>

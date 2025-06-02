@@ -177,21 +177,4 @@
   }
 }
 
-@keyframes selection {
-    from {
-    transform: translateX(0);
-    }
-    to {
-        transform: translateX(10px);
-    }
-}
-
-@keyframes deselection {
-    from {
-        transform: translateX(10px);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
 

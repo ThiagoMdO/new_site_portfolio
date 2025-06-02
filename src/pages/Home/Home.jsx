@@ -1,4 +1,7 @@
 import styles from './Home.module.css';
+import '../../styles/animations.css';
+
+import { useEffect } from 'react';
 
 // images
 import PerfilProfilePicture from '../../assets/icons/perfil.png';
@@ -16,11 +19,29 @@ import Projects from '../Projects/Projects';
 
 const Home = () => {
 
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+            });
+        }, {
+            threshold: 0.4,
+        });
+
+        const sections = document.querySelectorAll('.sectionToAnimate');
+        sections.forEach(section => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
     <>
         <section id='home'>
             <div className={styles.introduction}>
-                <div className={styles.nameAndJob}>
+                <div className={`sectionToAnimate animate-left ${styles.nameAndJob}`}>
                     <h1>THIAGO MENDES</h1>
                     <div className={styles.job}>
                         <h4>WEB DEVELOPER</h4>
@@ -30,7 +51,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.perfilProfile}>
+                <div className={`sectionToAnimate animate-right ${styles.perfilProfile}`}>
                     <img src={PerfilProfilePicture} alt="" />
                 </div>
             </div>

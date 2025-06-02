@@ -20,7 +20,7 @@ form div input, form textarea, form button {
     box-sizing: border-box;
 }
 form div input {
-    width: 45%;
+    width: 50%;
 }
 
 form textarea {

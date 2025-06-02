@@ -11,12 +11,12 @@ const Services = () => {
         <h2>TIPOS DE SERVIÇOS</h2>
         <div className={styles.services}>
             <ul>
-                <li>
+                <li className='sectionToAnimate animate-left'>
                     <img src={IconWebDev} alt="" />
                     <h3>WEB DEVELOPMENT</h3>
                     <p>Criação de web sites institucionais, portifólio, divulgação de conteúdo digital</p>
                 </li>
-                <li>
+                <li className='sectionToAnimate animate-right'>
                     <img src={IconBackend} alt="" />
                     <h3>BACKEND</h3>
                     <p>
@@ -24,14 +24,14 @@ const Services = () => {
                         segurança e cobertura de testes
                     </p>
                 </li>
-                <li>
+                <li className='sectionToAnimate animate-left'>
                     <img src={IconFrontend} alt="" />
                     <h3>FRONTEND</h3>
                     <p>
                         Criação de interfaces graficas faceis utilizando através de UX/UI
                     </p>
                 </li>
-                <li>
+                <li className='sectionToAnimate animate-right'>
                     <img src={IconDatas} alt="" />
                     <h3>ANALISTA DE SISTEMA</h3>
                     <p>

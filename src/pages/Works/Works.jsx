@@ -1,7 +1,5 @@
 import styles from './Works.module.css';
 
-
-
 // icons
 import IconParkOutline_right from '../../assets/icons/icon-park-outline_right.png';
 import IconWordpress from '../../assets/icons/logos_wordpress.png';
@@ -15,7 +13,7 @@ const Works = () => {
         <h2>TRABALHOS RECENTES</h2>
         <ul>
             <li className={styles.workLi}>
-                <div className={styles.work}>
+                <div className={`sectionToAnimate animate-up ${styles.work}`}>
                     <div>
                         <h2>Festival Nacional de Curta Pensar Filmes</h2>
                         <a 
@@ -51,13 +49,13 @@ const Works = () => {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen>
                     </iframe>
-                    <div className={styles.technologies}>
+                    <div className={`sectionToAnimate animate-up ${styles.technologies}`}>
                         <img src={IconWordpress} alt="Wordpress" title='Wordpress'/>
                     </div>
                 </div>
             </li>
             <li  className={styles.workLi}>
-                <div className={styles.work}>
+                <div className={`sectionToAnimate animate-up ${styles.work}`}>
                     <div>
                         <h2>Festival Nacional de Curta Pensar Filmes</h2>
                         <a 
@@ -93,7 +91,7 @@ const Works = () => {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen>
                     </iframe>
-                    <div className={styles.technologies}>
+                    <div className={`sectionToAnimate animate-up ${styles.technologies}`}>
                         <img src={IconWordpress} alt="Wordpress" title='Wordpress'/>
                     </div>
                 </div>

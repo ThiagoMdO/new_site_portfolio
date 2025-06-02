@@ -37,8 +37,8 @@ const AboutMe = () => {
         <h2>INFORMAÇÕES PESSOAIS</h2>
 
         <div className={styles.myDescription}>
-            <img src={PerfilProfilePicture} alt="" />
-            <div className={styles.myDescriptionInfo}>
+            <img src={PerfilProfilePicture} className='sectionToAnimate animate-down' alt="" />
+            <div className={`sectionToAnimate animate-up ${styles.myDescriptionInfo}`}>
                 <h2>Sobre mim</h2>
                 <p>
                     Sou uma pessoa curiosa, comunicativa e apaixonada por resolver problemas e melhorar processos. 
@@ -98,7 +98,7 @@ const AboutMe = () => {
             </div>
 
         </div>
-        <div className={styles.skills}>
+        <div className={`sectionToAnimate animate-up ${styles.skills}`}>
             <h2>Skills</h2>
             <div>
                 <img src={IconJava}     alt="Java"          title='Java'/>
