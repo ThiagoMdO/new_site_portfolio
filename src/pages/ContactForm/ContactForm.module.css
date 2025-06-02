@@ -48,11 +48,14 @@ form button:hover {
     box-shadow: inset 0 0 0 2px #27A48D;
 }
 
-@media (max-width: 600px) { 
+/* Celulares - < celulares menores (360px à 480px) à  celulares telas comuns (481px à 600px) */
+/* Tablets - >= tablets (601px) modo retrato (1024px) */
+@media (max-width: 1024px) { 
 
     form {
         width: 90%;
     }
+
     form div {
         flex-direction: column;
     }
