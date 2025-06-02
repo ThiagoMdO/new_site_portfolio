@@ -24,10 +24,10 @@ const Navbar = () => {
 
       <div className={`${styles.navRight} ${menuOpen ? styles.active : ''}`}>
         <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
-        <a href="#trabalhos" onClick={() => setMenuOpen(false)}>Trabalhos</a>
+        <a href="#works" onClick={() => setMenuOpen(false)}>Trabalhos</a>
         <a href="#about" onClick={() => setMenuOpen(false)}>Sobre Mim</a>
         <a href="#services" onClick={() => setMenuOpen(false)}>Serviços</a>
-        <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
+        <a href="#contact" onClick={() => setMenuOpen(false)}>Contato</a>
       </div>
     </nav>
   )

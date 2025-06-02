@@ -31,7 +31,7 @@
     width: 50px;
 }
 
-.infoRecentWorks {
+.infoRecentWorks a {
     display:flex;
     justify-content: center;
     align-items: center;

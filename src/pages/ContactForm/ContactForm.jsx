@@ -43,7 +43,10 @@ const ContactForm = () => {
           <input type="text" name="name" placeholder="Nome*" required />
           <input type="email" name="email" placeholder="Email*" required />
       </div>
-      <textarea name="message" placeholder="Mensagem*" required></textarea>
+      <div>
+
+        <textarea name="message" placeholder="Mensagem*" required></textarea>
+      </div>
      
       <div className={styles.recaptcha}>
         <ReCAPTCHA

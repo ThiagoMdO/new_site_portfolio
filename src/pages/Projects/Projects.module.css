@@ -43,6 +43,7 @@ ul li .work div {
 ul li .work .infoWork {
     max-width: 100%;
     min-height: 200px;
+    height: auto;
 }
 
 ul li .work .infoWork p{
@@ -112,12 +113,15 @@ ul li .work .technologies img {
 }
 
 /* Celulares - < celulares menores (360px à 480px) à  celulares telas comuns (481px à 600px) */
-/* Tablets - >= tablets (601px) modo retrato (1024px) */
-@media (max-width: 1024px) {
+/* Tablets - >= tablets (601px) modo retrato (1024px) - ajustado para tablets maiores (1080px) */
+@media (max-width: 1080px) {
 
     ul {
         flex-direction: column;
         gap: 40px;
+    }
+    ul li{
+        height: auto;
     }
 
     .work {
@@ -126,6 +130,8 @@ ul li .work .technologies img {
     .work iframe {
         max-height: 20%;
     }
+
+    
     
     .work .infoWork{
         margin-bottom: 100px;

@@ -35,16 +35,18 @@ const Home = () => {
                 </div>
             </div>
             <div className={styles.infoRecentWorks}>
-                <img
-                    src={IconParkOutline_down}
-                    alt="seta-para-baixo"
-                    className={styles.animatedIcon}
-                />
-                <span>Trabalhos recentes</span>
+                <a href="#works">
+                    <img
+                        src={IconParkOutline_down}
+                        alt="seta-para-baixo"
+                        className={styles.animatedIcon}
+                    />
+                    <span>Trabalhos recentes</span>
+                </a>
             </div>
         </section>
 
-        <section id="trabalhos" className={`${styles.section} ${styles.recentWorks}`}>
+        <section id="works" className={`${styles.section} ${styles.recentWorks}`}>
             <Works />
         </section>
 
@@ -60,7 +62,7 @@ const Home = () => {
             <Services />
         </section>
    
-        <section id="contato" className={`${styles.section} ${styles.contact}`}>
+        <section id="contact" className={`${styles.section} ${styles.contact}`}>
             <Contact />
         </section>
     </>        

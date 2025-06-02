@@ -188,7 +188,7 @@
     }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1080px) {
     .myDescription {
         justify-content: center;
         align-items: center;

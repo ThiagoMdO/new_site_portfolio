@@ -77,30 +77,32 @@
 
   .navRight {
     overflow: hidden;
-    max-height: 0;
+    opacity: 0;
+    height: 100vh;
+    max-width: 0%;
     transition: all 0.5s ease;
     color: transparent;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: 100%;
     position: absolute;
     top: 100%;
-    left: 0;
     right: 0;
     margin-top: 0;
-  }
-
-  .navRight.active {
-    max-height: 400px;
     padding: 50px 0;
   }
 
+  .navRight.active {    
+    max-width: 80%;
+    opacity: 1;
+  }
+
   .navRight a {
-    color: #051916;
+    color: #fff;
     padding: 10px 0;
     
     text-align: center;
