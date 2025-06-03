@@ -1,13 +1,16 @@
-.ContactH2 {
-    margin-top: 140px;
-}   
-
 .iconsSocial {
     display: flex;
     gap: 30px;
     padding-bottom: 40px;
 }
+
 .iconsSocial img{
     width: 43px;
     height: 43px;
+}
+
+@media (max-width: 1080px) {
+    .ContactH2 {
+        margin-top: 100px;
+    }
 }
